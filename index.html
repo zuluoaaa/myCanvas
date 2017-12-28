@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>canvas</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+<canvas id="myCanvas" style="border:1px solid red"></canvas>
+<div id="app">
+    <input @click="changeCanvasType(2,1)" type="button" value="画笔" />
+    <input @click="changeCanvasType(3,4)" type="button" value="直线" />
+    <input @click="changeCanvasType('fill','')" type="button" value="填充" />
+    <input type="button" value="矩形" />
+    <input type="button" value="圆形" />
+    <input @click="showColorPicker" type="button" value="颜色选择器">
+    <div>当前使用颜色：{{getSelectColor}}</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="js/imageMatrixUtils.js"></script>
+<script src="js/colorPicker.js"></script>
+<script src="js/main.js"></script>
+<script src="js/menu.js"></script>
+<script>
+
+</script>
+</body>
+</html>
